@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="classic">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#F5FEF6">
+  <title>LifeOS — Цифровой планер</title>
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div id="authContainer" style="display:none;"></div>
+
+  <div id="burgerMenu" class="burger-menu">
+    <div class="burger-header">
+      <div class="burger-avatar" id="burgerAvatar">👤</div>
+      <div id="burgerUserName" class="burger-name">Пользователь</div>
+    </div>
+    <div class="burger-links">
+      <button class="menu-link" data-tab="dashboard">🏠 Дашборд</button>
+      <button class="menu-link" data-tab="daily">📅 Ежедневник</button>
+      <button class="menu-link" data-tab="finance">💰 Финансы</button>
+      <button class="menu-link" data-tab="schedule">⏱️ Рабочий календарь</button>
+      <button class="menu-link" data-tab="dates">📌 Важные даты</button>
+      <button class="menu-link" data-tab="habits">🌱 Привычки</button>
+      <button class="menu-link" data-tab="library">📚 Библиотека</button>
+      <button class="menu-link" data-tab="analytics">📊 Аналитика</button>
+      <button class="menu-link" data-tab="settings">⚙️ Настройки</button>
+    </div>
+  </div>
+
+  <div class="app">
+    <header id="appHeader">
+      <button class="burger-btn" id="burgerBtn">☰</button>
+      <h1 id="pageTitle">LifeOS</h1>
+      <div id="headerDate" class="header-date"></div>
+    </header>
+    <main id="view"></main>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+
+  <div id="confirmModal" class="modal hidden">
+    <div class="confirm-box">
+      <div class="confirm-icon" id="confirmIcon">⚠️</div>
+      <div class="confirm-title" id="confirmTitle">Подтвердите действие</div>
+      <div class="confirm-message" id="confirmMessage">Вы уверены?</div>
+      <div class="confirm-actions">
+        <button class="confirm-btn confirm-btn-cancel" id="confirmCancel">Отмена</button>
+        <button class="confirm-btn confirm-btn-ok" id="confirmOk">Удалить</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="pickerModal" class="modal hidden">
+    <div class="picker-box">
+      <div class="flex-between mb-12">
+        <div class="picker-title" id="pickerTitle">Выберите</div>
+        <button class="btn-icon" onclick="closePicker()">✕</button>
+      </div>
+      <div id="pickerContent"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

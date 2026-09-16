@@ -1,0 +1,110 @@
+:root {
+  --radius: 16px;
+  --nav-height: 64px;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Georgia', 'Times New Roman', serif;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 28px rgba(0,0,0,0.12);
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================================================
+   1. КЛАССИЧЕСКИЙ — насыщенное бордо с золотом
+   ============================================================ */
+[data-theme="classic"] {
+  --bg: #FAF4E6;
+  --bg-gradient: linear-gradient(160deg, #FAF4E6 0%, #F3E8D0 100%);
+  --card: #FFFCF3;
+  --card-hover: #FEF7E8;
+  --accent: #6B0F1A;
+  --accent2: #C9A961;
+  --accent-gradient: linear-gradient(135deg, #6B0F1A 0%, #8B1A2B 60%, #C9A961 140%);
+  --accent-soft: rgba(107, 15, 26, 0.08);
+  --text: #2B1810;
+  --text-muted: #7A6650;
+  --border: #D4AF6A;
+  --border-soft: #E8D9B0;
+  --shadow-color: rgba(107, 15, 26, 0.08);
+  --fab-shadow: 0 10px 30px rgba(107, 15, 26, 0.35);
+}
+
+/* ============================================================
+   2. МЯГКИЙ ЛЁН — светлый с бледно-зелёным
+   ============================================================ */
+[data-theme="soft-poppy"] {
+  --bg: #F8F6F0;
+  --bg-gradient: linear-gradient(160deg, #F8F6F0 0%, #EFEBDC 100%);
+  --card: #FDFBF4;
+  --card-hover: #F7F4E8;
+  --accent: #7C8F66;
+  --accent2: #C4B89A;
+  --accent-gradient: linear-gradient(135deg, #7C8F66 0%, #9CAC86 60%, #C4B89A 130%);
+  --accent-soft: rgba(124, 143, 102, 0.10);
+  --text: #3A3D2E;
+  --text-muted: #8A8A72;
+  --border: #D4D0B8;
+  --border-soft: #E4E0CC;
+  --shadow-color: rgba(124, 143, 102, 0.10);
+  --fab-shadow: 0 10px 30px rgba(124, 143, 102, 0.28);
+}
+
+/* ============================================================
+   3. ОБЛАЧНАЯ МЯТА — светлый воздушный с мятой
+   ============================================================ */
+[data-theme="cloudy-mint"] {
+  --bg: #F1F8F5;
+  --bg-gradient: linear-gradient(160deg, #F1F8F5 0%, #E0EFE9 100%);
+  --card: #FBFEFC;
+  --card-hover: #F2FAF5;
+  --accent: #4FAE8A;
+  --accent2: #8FCEBB;
+  --accent-gradient: linear-gradient(135deg, #4FAE8A 0%, #72C4A6 60%, #B4E0D0 140%);
+  --accent-soft: rgba(79, 174, 138, 0.10);
+  --text: #223832;
+  --text-muted: #6F9088;
+  --border: #B6DACE;
+  --border-soft: #D3EAE0;
+  --shadow-color: rgba(79, 174, 138, 0.12);
+  --fab-shadow: 0 10px 30px rgba(79, 174, 138, 0.32);
+}
+
+/* ============================================================
+   4. ПОЛУНОЧНАЯ МГЛА — тёмный синий с дорогими акцентами
+   ============================================================ */
+[data-theme="midnight"] {
+  --bg: #0D1224;
+  --bg-gradient: radial-gradient(circle at 20% 0%, #1A2342 0%, #0D1224 55%);
+  --card: #1C2541;
+  --card-hover: #232E52;
+  --accent: #C9A227;
+  --accent2: #8B7BD8;
+  --accent-gradient: linear-gradient(135deg, #C9A227 0%, #E0BB4E 50%, #8B7BD8 130%);
+  --accent-soft: rgba(201, 162, 39, 0.12);
+  --text: #F0EDE0;
+  --text-muted: #A9A8C0;
+  --border: #3A4563;
+  --border-soft: #2C3552;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --fab-shadow: 0 10px 30px rgba(201, 162, 39, 0.3);
+}
+
+/* ============================================================
+   5. ЛЕСНОЙ НУАР — дорогой зелёный с древесными нотками
+   ============================================================ */
+[data-theme="forest-noir"] {
+  --bg: #16201A;
+  --bg-gradient: radial-gradient(circle at 80% 10%, #1F2E22 0%, #16201A 60%);
+  --card: #223026;
+  --card-hover: #2A3A2E;
+  --accent: #C49A6C;
+  --accent2: #8FA878;
+  --accent-gradient: linear-gradient(135deg, #8FA878 0%, #A8BE8E 45%, #C49A6C 130%);
+  --accent-soft: rgba(196, 154, 108, 0.14);
+  --text: #F0EBE0;
+  --text-muted: #A8AD98;
+  --border: #3A4A3C;
+  --border-soft: #2E3B30;
+  --shadow-color: rgba(0, 0, 0, 0.35);
+  --fab-shadow: 0 10px 30px rgba(143, 168, 120, 0.35);
+}
